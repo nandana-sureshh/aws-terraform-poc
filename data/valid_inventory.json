@@ -1,0 +1,18 @@
+{
+  "vpcs": [
+    {"id": "vpc-main"}
+  ],
+  "subnets": [
+    {"id": "subnet-public", "vpc_id": "vpc-main"},
+    {"id": "subnet-private", "vpc_id": "vpc-main"}
+  ],
+  "security_groups": [
+    {"id": "sg-web", "vpc_id": "vpc-main"},
+    {"id": "sg-ssh", "vpc_id": "vpc-main"}
+  ],
+  "instances": [
+    {"id": "i-web1", "subnet_id": "subnet-public", "security_group_ids": ["sg-web", "sg-ssh"]},
+    {"id": "i-app1", "subnet_id": "subnet-private", "security_group_ids": ["sg-ssh"]},
+    {"id": "i-batch1", "subnet_id": "subnet-private", "security_group_ids": []}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "vpcs": [
+    {"id": "vpc-main"}
+  ],
+  "subnets": [
+    {"id": "subnet-a", "vpc_id": "vpc-main"},
+    {"id": "subnet-orphan", "vpc_id": "vpc-999"}
+  ],
+  "security_groups": [
+    {"id": "sg-web", "vpc_id": "vpc-main"}
+  ],
+  "instances": [
+    {"id": "i-ok", "subnet_id": "subnet-a", "security_group_ids": ["sg-web"]},
+    {"id": "i-lost", "subnet_id": "subnet-404", "security_group_ids": ["sg-web"]},
+    {"id": "i-nosg", "subnet_id": "subnet-a", "security_group_ids": ["sg-web", "sg-ghost"]}
+  ]
+}
