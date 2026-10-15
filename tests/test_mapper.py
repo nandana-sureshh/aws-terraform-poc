@@ -9,7 +9,7 @@ import unittest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 
-import mapper  # noqa: E402
+import mapper  
 
 VALID_FILE = os.path.join(ROOT, "data", "valid_inventory.json")
 MISSING_FILE = os.path.join(ROOT, "data", "missing_refs_inventory.json")
