@@ -9,7 +9,7 @@ Claude was used as a development assistant (design review, implementation, tests
 Four resource types only: VPC, subnet, security group, EC2 instance. Terminal output only.
 
 ## How it works
-`mapper.py` (standard library only):
+`mapper.py` (standard library only)-
 1. `load_inventory` reads the JSON and `validate_structure` checks it (required lists/fields, correct types, unique ids). Problems raise `InventoryError`.
 2. `find_references` applies four explicit rules, nothing is inferred:
 
