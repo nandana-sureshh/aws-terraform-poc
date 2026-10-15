@@ -14,7 +14,7 @@ import sys
 COLLECTIONS = ["vpcs", "subnets", "security_groups", "instances"]
 
 # The complete set of relationship rules:
-# collection -> list of (reference field, collection the target must be in, is it a list?)
+# collection - list of (reference field, collection the target must be in, is it a list?)
 REFERENCE_RULES = {
     "subnets": [("vpc_id", "vpcs", False)],
     "security_groups": [("vpc_id", "vpcs", False)],
