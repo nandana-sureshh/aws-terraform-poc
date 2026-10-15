@@ -1,5 +1,5 @@
 # ILLUSTRATIVE ONLY. This file has NOT been validated with the Terraform CLI
-# (terraform init/validate/plan were never run) and is never read by mapper.py.
+# (terraform init/validate/plan were never run) and is never read by mapper.py
 # It shows how the modeled relationships map to Terraform references.
 # The AMI id is a placeholder.
 
