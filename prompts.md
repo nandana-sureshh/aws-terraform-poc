@@ -44,6 +44,7 @@ Do not expand the scope or generate the implementation yet. Wait until the requi
 
 prompt 2
 --------
+
 The requirements review looks good. Please proceed with the implementation, keeping the POC small, beginner-friendly, and within the original scope.
 Please follow these decisions:
 Use exit code 0 when all references resolve, 1 when references are missing, and 2 when the input is invalid.
@@ -86,3 +87,7 @@ Before finishing, summarize the files created, the checks performed, and anythin
 
 Pompt 3
 -------
+
+I want your help with a small POC, and before we start, I want to explain the context. I had a discussion with my stakeholder about my technical skillset and future project allocation. He asked me which areas I am most proficient in as im a fresher , and I told him that I would like to focus on AWS Cloud Infrastructure and Networking, along with Terraform.  He specifically wants to see how we use AI tools like Claude to build the POC not actually integrate ai into the poc.He also mentioned that we should aim to make the POC as reliable as possible and that we can use mock data if needed. Currently, I do not have access to an AWS account or Terraform in my working environment, so the POC needs to be achievable locally using mock data if necessary. I want this POC to demonstrate both my AWS and Terraform knowledge and my ability to use Claude effectively during the development process. However, it must remain very small, simple, practical, and achievable within a short time. I don’t want to overcomplicate it or build a full-fledged application. For now, please just understand this context. Help me brainstorm a few suitable POC ideas that meet these requirements, compare their feasibility and relevance, and recommend the most appropriate one. Tell me what we could demonstrate without AWS or Terraform access, and how we could validate the results.
+AWS Infrastructure Dependency Mapper is a better option. No need to complicate whith much resources. a vpc, subnet,
+security group and ec2 instance references might be sufficient for this build, as the expectation is much into looking for the ability to build something throught AI assistance. so how can we actually implement this by using mock data without terraform cli access and aws account.
